@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+* {
+    font-family: 'A2z', sans-serif;
+}
+
+/* 탭 메뉴 스타일 */
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 100px; /* 상단바 고정 레이아웃 복구에 따라 여백 재조정 */
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* 카드 컨테이너 마진 조절 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0;
+    /* 탭 메뉴가 위에 생겼으므로 조절 */
+}
+
+/* 카드 애니메이션 */
+.card {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+/* 개별 카드 설정 */
+.card {
+    width: 250px;
+    /* 카드의 전체 너비를 조절 (원하는 크기로 수정) */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 이미지 크기 자동 조절 (원본 비율 유지) */
+.card-img-top {
+    width: 100%;
+    /* 카드의 너비(250px)에 맞춤 */
+    height: auto;
+    /* 이미지의 원래 비율에 맞춰 높이 자동 조절 */
+    object-fit: contain;
+    /* 이미지가 잘리지 않고 전체가 보이도록 설정 */
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* PDF 뷰어 컨테이너 스타일 */
+.pdf-viewer-container {
+    max-width: 1000px;
+    margin: 100px auto;
+    /* 상단 여백을 주어 카드 목록과 겹치지 않게 함 */
+    padding: 20px;
+}
+
+.pdf-frame {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
