@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 작업물 | 종환</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./favicon.ico">
+    <style>
+        .filter-btn.active {
+            background-color: var(--primary) !important;
+            color: white !important;
+            border-color: var(--primary) !important;
+        }
+
+        .portfolio-item.hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./image/logo.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top me-2">
+                종환이의포트폴리오
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">포트폴리오</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">프로필</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5" style="background: linear-gradient(to bottom, #0f172a, #1e293b);">
+        <div class="container py-5 text-center">
+            <h1 class="display-4 fw-bold mb-3 text-white">학교 작업물</h1>
+            <p class="lead text-secondary">학창 시절 열정을 쏟았던 디자인과 영상 작업물입니다.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow-1">
+        <!-- Filter Buttons -->
+        <div class="container py-4">
+            <div class="d-flex justify-content-center gap-2 mb-5 flex-wrap">
+                <button class="btn btn-outline-secondary filter-btn active" data-filter="all">전체</button>
+                <button class="btn btn-outline-secondary filter-btn" data-filter="lookbook">사진/리터칭</button>
+                <button class="btn btn-outline-secondary filter-btn" data-filter="mockup">디자인/목업</button>
+                <button class="btn btn-outline-secondary filter-btn" data-filter="ad">영상/기타</button>
+            </div>
+
+            <div class="row g-4" id="portfolio-grid">
+                <!-- 룩북 아이템 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="lookbook">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/30106-김종환-룩북리터칭1.jpg" class="card-img-top" alt="룩북 리터칭 1">
+                        <div class="card-body">
+                            <span class="category-tag">Photo</span>
+                            <h5 class="card-title">룩북 리터칭 1</h5>
+                            <p class="card-text">모델 룩북 리터칭 작업물입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="lookbook">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/30106-김졸환-룻북리터칭2.jpg" class="card-img-top" alt="룩북 리터칭 2">
+                        <div class="card-body">
+                            <span class="category-tag">Photo</span>
+                            <h5 class="card-title">룩북 리터칭 2</h5>
+                            <p class="card-text">모델 룩북 리터칭 작업물입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="lookbook">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/30106-김종환-리터칭1.jpg" class="card-img-top" alt="리터칭 1">
+                        <div class="card-body">
+                            <span class="category-tag">Photo</span>
+                            <h5 class="card-title">리터칭 1</h5>
+                            <p class="card-text">이미지 리터칭 작업물입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="lookbook">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/30106-김종환-리터칭2.jpg" class="card-img-top" alt="리터칭 2">
+                        <div class="card-body">
+                            <span class="category-tag">Photo</span>
+                            <h5 class="card-title">리터칭 2</h5>
+                            <p class="card-text">이미지 리터칭 작업물입니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 목업 아이템 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/Credit Card Mockup.png" class="card-img-top" alt="Credit Card Mockup">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">Credit Card Mockup</h5>
+                            <p class="card-text">카드 디자인 목업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/나의 브랜딩 판넬 예시 3.jpg" class="card-img-top" alt="브랜딩 판넬">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">브랜딩 판넬</h5>
+                            <p class="card-text">브랜딩 판넬 디자인 예시입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/멀타텐리프로필 로고.jpg" class="card-img-top" alt="멀타텐리프로필 로고">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">멀타텐리 로고</h5>
+                            <p class="card-text">로고 디자인 목업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/멀티텐리 채널아트.jpg" class="card-img-top" alt="멀티텐리 채널아트">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">채널아트</h5>
+                            <p class="card-text">채널아트 디자인 목업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/Free_Business_Card_Mockup_4.jpg" class="card-img-top"
+                            alt="Business Card Mockup">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">Business Card</h5>
+                            <p class="card-text">명함 디자인 목업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/iMac Website Mockup 복사본.jpg" class="card-img-top"
+                            alt="iMac Website Mockup">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">Website Mockup</h5>
+                            <p class="card-text">웹사이트 디자인 목업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/iphone Simple Mockup Free Scene.jpg" class="card-img-top" alt="iPhone Mockup">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">iPhone Mockup</h5>
+                            <p class="card-text">앱 디자인 목업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="mockup">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/Mockup.jpg" class="card-img-top" alt="Mockup">
+                        <div class="card-body">
+                            <span class="category-tag">Design</span>
+                            <h5 class="card-title">Mockup</h5>
+                            <p class="card-text">종합 디자인 목업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 기타(영상) 아이템 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="ad">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/hanmigo.png" class="card-img-top" alt="광고콘텐츠제작 수행평가">
+                        <div class="card-body">
+                            <span class="category-tag">Video</span>
+                            <h5 class="card-title">동고</h5>
+                            <p class="card-text">학교 광고 제작 수업 결과물입니다.</p>
+                            <a href="./video/광고콘텐츠제작 수행평가.mp4" target="_blank" class="btn btn-primary btn-sm">영상 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="ad">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/hanmigo.png" class="card-img-top" alt="기태세끼">
+                        <div class="card-body">
+                            <span class="category-tag">Video</span>
+                            <h5 class="card-title">기태세끼</h5>
+                            <p class="card-text">학교 창작 영상 작업물입니다.</p>
+                            <a href="./video/기태세끼.mp4" target="_blank" class="btn btn-primary btn-sm">영상 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="ad">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/hanmigo.png" class="card-img-top" alt="다시 시작하는 힘">
+                        <div class="card-body">
+                            <span class="category-tag">Video</span>
+                            <h5 class="card-title">다시 시작하는 힘</h5>
+                            <p class="card-text">29초 영화제 출품작입니다.</p>
+                            <a href="./video/다시 시작하는 힘(29초 영화제).mp4" target="_blank" class="btn btn-primary btn-sm">영상
+                                보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="ad">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/hanmigo.png" class="card-img-top" alt="북크리에이터즈 스톱모션">
+                        <div class="card-body">
+                            <span class="category-tag">Video</span>
+                            <h5 class="card-title">스톱모션 영상</h5>
+                            <p class="card-text">북크리에이터즈 수업 작품입니다.</p>
+                            <a href="./video/북크리에이터즈 스톱모션.mp4" target="_blank" class="btn btn-primary btn-sm">영상 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="ad">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/hanmigo.png" class="card-img-top" alt="향수그리고향수">
+                        <div class="card-body">
+                            <span class="category-tag">Video</span>
+                            <h5 class="card-title">향수그리고향수</h5>
+                            <p class="card-text">향수를 주제로 한 영상입니다.</p>
+                            <a href="./video/향수그리고향수.mp4" target="_blank" class="btn btn-primary btn-sm">영상 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 portfolio-item" data-category="ad">
+                    <div class="card shadow-sm border-0">
+                        <img src="./image/hanmigo.png" class="card-img-top" alt="헤픈우연">
+                        <div class="card-body">
+                            <span class="category-tag">Video</span>
+                            <h5 class="card-title">헤픈우연</h5>
+                            <p class="card-text">뮤직비디오 작품입니다.</p>
+                            <a href="./video/헤픈우연.mp4" target="_blank" class="btn btn-primary btn-sm">영상 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2 footer-text">&copy; 2026 Jonghwan. All rights reserved.</p>
+            <p class="small text-muted mb-0">Designed for Excellence</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function applyFilter(filter) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            const activeBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                applyFilter(btn.getAttribute('data-filter'));
+            });
+        });
+    </script>
+</body>
+
+</html>

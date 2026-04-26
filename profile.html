@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 | 종환</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./image/logo.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top me-2">
+                종환이의포트폴리오
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">포트폴리오</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile.html">프로필</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Hero -->
+    <section class="py-5" style="background: linear-gradient(to bottom, #0f172a, #1e293b);">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="position-relative d-inline-block">
+                        <img src="./image/김종환_증명-1 (1).jpg" alt="Kim Jonghwan"
+                            class="img-fluid rounded-circle shadow-lg"
+                            style="width: 280px; height: 280px; object-fit: cover; border: 8px solid rgba(255,255,255,0.05); position: relative; z-index: 2;">
+                        <div class="position-absolute"
+                            style="top: -10px; left: -10px; right: -10px; bottom: -10px; background: linear-gradient(45deg, var(--primary), #a855f7); border-radius: 50%; filter: blur(15px); opacity: 0.3; z-index: 1;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 ps-lg-5 text-center text-lg-start">
+                    <span class="category-tag mb-3">Service Planner</span>
+                    <h1 class="display-2 fw-bold mb-3 text-white">김종환</h1>
+                    <p class="lead mb-4 text-secondary">데이터를 읽고 사용자의 경험을 설계하는 주니어 기획자입니다.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-3"><strong class="text-white me-2">BIRTH:</strong> 2006.05.11</li>
+                                <li class="mb-3"><strong class="text-white me-2">EMAIL:</strong> kimkkgg0511@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-3"><strong class="text-white me-2">ROLE:</strong> PM, UI/UX Planner</li>
+                                <li class="mb-3"><strong class="text-white me-2">LOCATION:</strong> Seoul, Korea</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="./files/resume_jonghwan.pdf" download="서비스기획자_김종환_이력서.pdf"
+                            class="btn btn-primary btn-lg px-4 shadow-sm">
+                            <i class="bi bi-download me-2"></i>이력서 다운로드
+                        </a>
+                        <a href="portfolio.html" class="btn btn-outline-light btn-lg px-4 ms-2">
+                            포트폴리오 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-2">
+                        <div class="card-body text-center">
+                            <div class="mb-4 text-primary display-6">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Service Planning</h3>
+                            <p class="text-secondary mb-0">사용자 요구사항 분석 및 UI/UX 와이어프레임 설계. 논리적인 서비스 흐름을 기획합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-2">
+                        <div class="card-body text-center">
+                            <div class="mb-4 text-primary display-6">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Technical Skills</h3>
+                            <p class="text-secondary mb-0">Python 데이터 분석 및 프론트엔드 프로토타이핑. 기술적 이해도가 높은 기획을 지향합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-2">
+                        <div class="card-body text-center">
+                            <div class="mb-4 text-primary display-6">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Tools & Workflow</h3>
+                            <p class="text-secondary mb-0">Figma, Slack, Notion을 활용한 협업 및 문서화. 능동적인 커뮤니케이션을 중시합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2 footer-text">&copy; 2026 Jonghwan. All rights reserved.</p>
+            <p class="small text-muted mb-0">Designed for Excellence</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</body>
+
+</html>
